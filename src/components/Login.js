@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 import { checkValidData } from "../utils/validate";
 import {
   createUserWithEmailAndPassword,
@@ -121,12 +122,13 @@ const Login = () => {
         >
           {isSignInForm ? "Sign In" : "Sign Up"}
         </button>
-        <p className="py-4 cursor-pointer" onClick={toggleSignInForm}>
+        <p className="py-4 cursor-pointer " onClick={toggleSignInForm}>
           {isSignInForm
             ? "New to Netflix? Sign Up Now"
             : "Already registered? Sign In Now."}
         </p>
       </form>
+      <Footer/>
     </div>
   );
 };

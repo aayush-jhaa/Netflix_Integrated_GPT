@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Footer from "./Footer";
 import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import MainContainer from "./MainContainer";
 import SecondaryContainer from "./SecondaryContainer";
@@ -23,6 +24,7 @@ const Browse = () => {
           <SecondaryContainer />
         </>
       )}
+      {/* <Footer /> */}
     </div>
   );
 };
